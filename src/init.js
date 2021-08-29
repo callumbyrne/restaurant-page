@@ -3,9 +3,8 @@ import createFooter from './footer';
 import createHome from './home';
 
 const init = () => {
-    createNav();
-    createHome();
-    createFooter();
+    const content = document.querySelector('#content');
+    content.append(createNav(), createHome(), createFooter());
 };
 
 export default init;

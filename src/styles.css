@@ -13,19 +13,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    background: url('./pizza-4952509_1920.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .nav {
-    height: 50px;
-    background-color: rgb(50, 50, 50);
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.nav img {
+    height: 50px;
+    weight: 50px;
+}
+
 button {
     margin: auto 5px;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(30, 30, 30);
     border: none;
     color: white;
 }
@@ -35,19 +45,60 @@ button:hover {
 }
 
 .home {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 72px;
     text-align: center;
+    color: white;
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
-    background-color: rgb(50, 50, 50);
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
     font-size: 12px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.7);
+    width: 50%;
+    height: 65vh;
+    padding: 10px;
+}
+
+.menuItem {
+    flex: 0 0 32%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
+}
+
+.menuItem p {
+    margin: 5px 0px;
+    font-weight: 500;
+}
+
+.contact {
+    background-color: rgba(50, 50, 50, 0.5);
+    width: 50%;
+    height: 65vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact p:first-child {
+    font-size: 30px;
+    font-weight: 600;
 }
