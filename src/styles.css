@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
 }
 
-.header {
+.nav {
     height: 50px;
     background-color: rgb(50, 50, 50);
     display: flex;
@@ -25,6 +25,13 @@ body {
 
 button {
     margin: auto 5px;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    color: white;
+}
+
+button:hover {
+    border-bottom: 1px solid white;
 }
 
 .home {

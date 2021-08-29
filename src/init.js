@@ -1,9 +1,9 @@
-import createHeader from './header';
+import createNav from './nav';
 import createFooter from './footer';
 import createHome from './home';
 
 const init = () => {
-    createHeader();
+    createNav();
     createHome();
     createFooter();
 };

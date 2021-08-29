@@ -1,7 +1,7 @@
-const createHeader = () => {
+const createNav = () => {
     const content = document.querySelector('#content');
     const header = document.createElement('div');
-    header.classList.add('header');
+    header.classList.add('nav');
 
     const homeButton = document.createElement('button');
     const menuButton = document.createElement('button');
@@ -17,4 +17,4 @@ const createHeader = () => {
     content.appendChild(header);
 };
 
-export default createHeader;
+export default createNav;
