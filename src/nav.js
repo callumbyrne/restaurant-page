@@ -1,8 +1,10 @@
 import logo from './pizza-logo.png';
 
 const createNav = () => {
-    const header = document.createElement('div');
-    header.classList.add('nav');
+    const nav = document.createElement('div');
+    nav.classList.add('nav');
+    const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('buttonDiv');
 
     const homeButton = document.createElement('button');
     const menuButton = document.createElement('button');
@@ -14,12 +16,15 @@ const createNav = () => {
     menuButton.innerText = 'Menu';
     contactButton.innerText = 'Contact';
 
+    buttonDiv.append(homeButton, menuButton, contactButton);
+
     const myLogo = new Image();
     myLogo.src = logo;
+    myLogo.setAttribute('id', 'logo');
 
-    header.append(myLogo, homeButton, menuButton, contactButton);
+    nav.append(myLogo, buttonDiv);
 
-    return header;
+    return nav;
 };
 
 export default createNav;

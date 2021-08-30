@@ -12,6 +12,7 @@ const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
 const contactButton = document.querySelector('#contact');
 const content = document.querySelector('#content');
+const logo = document.querySelector('#logo');
 
 homeButton.addEventListener('click', () => {
     content.removeChild(content.childNodes[1]);
@@ -26,4 +27,9 @@ menuButton.addEventListener('click', () => {
 contactButton.addEventListener('click', () => {
     content.removeChild(content.childNodes[1]);
     content.insertBefore(createContact(), content.childNodes[1]);
+});
+
+logo.addEventListener('click', () => {
+    content.removeChild(content.childNodes[1]);
+    content.insertBefore(createHome(), content.childNodes[1]);
 });
